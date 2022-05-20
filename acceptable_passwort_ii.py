@@ -11,7 +11,7 @@ import re
 
 
 def is_acceptable_password(password):
-    return len(password) > 6 and re.search(r'\d+', password) is not None
+    return len(password) > 6 and bool(re.search(r'\d+', password) and not password.isdigit())
 
 
-print(is_acceptable_password("muchlonger"))
+print(is_acceptable_password("1234678"))
