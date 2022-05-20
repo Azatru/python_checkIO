@@ -4,7 +4,6 @@ Input: A string.
 
 Output: a boolean.
 Precondition: a-z, A-Z, 1-9 and spaces'''
-import re
 
 
 def is_all_upper(text: str) -> bool:
