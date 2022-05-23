@@ -28,3 +28,15 @@ def caps_lock(text: str) -> str:
 
 
 print(caps_lock("Always wanted to visit Zambia."))
+
+
+# def caps_lock(text: str) -> str:
+#     return ''.join(c.upper() if i % 2 else c for i, c in enumerate(text.split('a')))
+
+
+
+# def caps_lock(text: str) -> str:
+#     parts = text.split('a')
+#     for i in range(1, len(parts), 2):
+#         parts[i] = parts[i].upper()
+#     return ''.join(parts)
